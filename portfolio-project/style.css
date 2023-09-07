@@ -1,0 +1,167 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: tahoma;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  padding: 25px;
+}
+
+.hero,
+.about-me,
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me p,
+.experience p {
+  max-width: 400px;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+}
+
+/* Navbar */
+
+.navbar {
+  display: grid;
+  grid-template:
+    "name nav-buttons" 30px /
+    100px 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+  background-color: teal;
+}
+
+.name {
+  display: grid;
+  grid-template-columns: 400px;
+  line-height: 30px;
+  font-weight: bold;
+  color: beige;
+  font-size: 1.5rem;
+}
+
+.nav-buttons {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-gap: 30px;
+  justify-content: right;
+}
+
+.about-me-button,
+.portfolio-button,
+.experience-button {
+  text-align: center;
+  line-height: 30px;
+  background-color: beige;
+  color: teal;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background-color: teal;
+}
+
+.hero-title {
+  color: beige;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.hero-intro {
+  color: beige;
+  font-size: 1rem;
+  margin-bottom: 75px;
+  max-width: 400px;
+}
+
+/* About me */
+.about-me {
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+.two-column-list li {
+  float: left;
+  width: 50%;
+}
+
+.two-column-list li:nth-child(odd) {
+  clear: left;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background-color: pink;
+  padding: 0 100px 100px 100px;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+  border: solid 5px crimson;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+}
+
+.read-more-button {
+  text-align: center;
+  display: block;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.git-repo {
+  text-align: center;
+  display: block;
+  color: crimson;
+  text-decoration: underline;
+}
+
+/* Experience */
+
+.experience {
+  padding-bottom: 84px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: darkslategray;
+  height: 40px;
+  color: grey;
+  line-height: 40px;
+}
